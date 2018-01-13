@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost:27017/demo');
+mongoose.connect('mongodb://localhost:27017/mondemo');
 // create instance of Schema
 var mongoSchema =   mongoose.Schema;
 // create schema
@@ -11,4 +11,4 @@ var userSchema  = {
     "ip_address": String,
 };
 // create model if not exists.
-module.exports = mongoose.model('users',userSchema);
+module.exports = mongoose.model('mondbuser',userSchema);
