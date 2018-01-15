@@ -3,7 +3,7 @@ const mongoOp = require("./mongo")
 const app = express()
 const router = express.Router()
 
-router.get('/users',(req,res) => {
+router.get('/mondbuser',(req,res) => {
   var pageNo = parseInt(req.query.pageNo)
   var size = parseInt(req.query.size)
   var query = {}
